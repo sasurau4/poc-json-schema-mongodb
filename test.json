@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "_PhenylMeta": {
+      "type": "object",
+      "properties": {
+        "versions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "op": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "op"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "locked": {
+          "type": "object",
+          "properties": {
+            "timestamp": {
+              "type": "string"
+            },
+            "clientHeadVersionId": {
+              "type": "string"
+            },
+            "ops": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "timestamp",
+            "clientHeadVersionId",
+            "ops"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "_id"
+  ],
+  "additionalProperties": false
+}
